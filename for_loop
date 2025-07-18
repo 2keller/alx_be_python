@@ -1,0 +1,4 @@
+fruits = ["apple", "banana", "cherry"]
+for fruit in fruits:
+    print(fruit)
+# This script prints each fruit in the list

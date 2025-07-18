@@ -1,0 +1,4 @@
+numbers = [1, 5, 3, 9]
+for number in numbers:
+   print("total: ", number)
+   print(number + nume)

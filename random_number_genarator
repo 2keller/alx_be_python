@@ -1,0 +1,16 @@
+import random
+secret = random.randint(1, 100)
+geuss = int(input("Enter a number between 1 and 100: "))    
+while geuss != secret:
+    match geuss:
+        case _ if geuss == secret:
+            print("Congratulations! You guessed the number.")
+        case _ if geuss < secret:
+            print("Too low! Try again.")
+        case _ if geuss > secret:
+            print("Too high! Try again.")
+        case _:
+            print("Invalid input. Please enter a number between 1 and 100.")
+    
+    print("Game Over! The secret number was:", secret)
+    
