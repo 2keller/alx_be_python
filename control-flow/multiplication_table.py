@@ -1,5 +1,4 @@
 number = int(input("Enter a number to see its multiplication table: "))
-i = 0
-for i in range(10):
+for i in range(1,11):
     print(number ,"*" ,i ,"=", number * i)
-    i =  i +1
+
