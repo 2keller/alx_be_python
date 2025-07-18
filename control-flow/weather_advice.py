@@ -1,9 +1,12 @@
-weather = input("What's the weather like today? (sunny/rainy/cold) ")
+# Prompt the user for input and normalize it by making it lowercase and removing extra spaces
+weather = input("What's the weather like today? (sunny/rainy/cold): ").lower().strip()
+
+# Provide clothing recommendations based on the normalized input
 if weather == "sunny":
-    print("wear a t-shirt and sunglasses.")
+    print("Wear a t-shirt and sunglasses.")
 elif weather == "rainy":
-    print("Don't forget your umbrella and raincoat.")
+    print("Don't forget your umbrella and a raincoat.")
 elif weather == "cold":
-    print("Make sure to wear a warm coat and scarf.")
+    print("Make sure to wear a warm coat and a scarf.")
 else:
-    print("i dont have recommendations for this weather.")
+    print("Sorry, I don't have recommendations for this weather.")
