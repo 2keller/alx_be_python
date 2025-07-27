@@ -10,4 +10,4 @@ def perform_operation(num1: float, num2: float, operation: str):
             return "division_by_zero"
         return num1 / num2
     else:
-        return
+        return "invalid_operation"
