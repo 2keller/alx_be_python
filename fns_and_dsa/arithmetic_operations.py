@@ -1,13 +1,16 @@
+# arithmetic_operations.py
+
 def perform_operation(num1: float, num2: float, operation: str):
-    if operation == "add":
+    if operation == 'add':
         return num1 + num2
-    elif operation == "subtract":
+    elif operation == 'subtract':
         return num1 - num2
-    elif operation == "multiply":
+    elif operation == 'multiply':
         return num1 * num2
-    elif operation == "divide":
+    elif operation == 'divide':
         if num2 == 0:
-            return "division_by_zero"
+            return "Error: Division by zero is not allowed."
         return num1 / num2
-    else:
-        return "invalid_operation"
+    # As per the specific requirements, no 'else' case for invalid operations
+    # is explicitly requested. The function will only handle the four specified
+    # operations.
