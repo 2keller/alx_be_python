@@ -1,11 +1,13 @@
-def perfom_operations(num1, num2 , operations):
-    if operations == "+":
+def perform_operation(num1: float, num2: float, operation: str):
+    if operation == "add":
         return num1 + num2
-    elif operations == "-":
+    elif operation == "subtract":
         return num1 - num2
-    elif operations == "*":
+    elif operation == "multiply":
         return num1 * num2
-    elif operations == "/":
+    elif operation == "divide":
+        if num2 == 0:
+            return "division_by_zero"
         return num1 / num2
     else:
-        return "invalid operation"
+        return
